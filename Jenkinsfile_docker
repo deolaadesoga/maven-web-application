@@ -24,11 +24,11 @@ pipeline{
         sh  "echo All conditions met/passed"
       }
     }
-      stage('upLoadArtifacts'){
-      steps{
-        sh "echo Running detail code analysis"
-        sh "mvn deploy"
-        sh "echo backupArtifacts in nexus"
+      // stage('upLoadArtifacts'){
+      // steps{
+      //  sh "echo Running detail code analysis"
+      //  sh "mvn deploy"
+      //  sh "echo backupArtifacts in nexus"
       }
     }
       stage('predeployment'){
